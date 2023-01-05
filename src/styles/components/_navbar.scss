@@ -1,0 +1,122 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-family: $font-1;
+  justify-content: space-around;
+  .logo {
+    img {
+      height: 57px;
+    }
+  }
+  .navigation {
+    letter-spacing: 0.04rem;
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    a {
+      color: bisque;
+    }
+  }
+  .register {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.05rem;
+    align-items: center;
+    a {
+      text-decoration: none;
+      transition: 0.2s ease;
+      color: white;
+      margin: 0 1rem;
+      &:hover {
+        border-bottom: 1px solid bisque;
+      }
+    }
+    .vertical-bar::before {
+      content: "";
+      position: absolute;
+      height: 30px;
+      background-color: bisque;
+      width: 1px;
+      top: 25px;
+    }
+  }
+  .toggleBurger {
+    display: none;
+    svg {
+      font-size: 2rem;
+    }
+  }
+  .navbar-mobile {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    font-family: $font-2;
+    ul {
+      color: white;
+      text-decoration: none;
+      list-style: none;
+      margin: auto;
+      font-size: 2.5rem;
+      li {
+        margin: 2rem;
+        text-align: center;
+        a {
+          color: bisque;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    justify-content: space-between;
+    margin: 0 2rem;
+    .toggleBurger,
+    .navbar-mobile {
+      display: flex;
+    }
+    .navigation {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .toggleBurger,
+    .navbar-mobile {
+      display: flex;
+    }
+    .navigation,
+    .register {
+      display: none;
+    }
+  }
+
+  .slide-bottom {
+    -webkit-animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-25%);
+      transform: translateY(-25%);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(-25%);
+      transform: translateY(-25%);
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+}
