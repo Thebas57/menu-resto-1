@@ -15,7 +15,10 @@
     justify-content: space-between;
     width: 30%;
     a {
-      color: bisque;
+      color: $color-1;
+      &:hover{
+        color: white;
+      }
     }
   }
   .register {
@@ -29,14 +32,14 @@
       color: white;
       margin: 0 1rem;
       &:hover {
-        border-bottom: 1px solid bisque;
+        border-bottom: 1px solid $color-1;
       }
     }
     .vertical-bar::before {
       content: "";
       position: absolute;
       height: 30px;
-      background-color: bisque;
+      background-color: $color-1;
       width: 1px;
       top: 25px;
     }
@@ -61,13 +64,24 @@
       list-style: none;
       margin: auto;
       font-size: 2.5rem;
+      padding: 0;
       li {
         margin: 2rem;
         text-align: center;
         a {
-          color: bisque;
+          color: $color-1;
+          &:hover{
+            color: white;
+          }
         }
       }
+    }
+    svg{
+      position: absolute;
+      font-size: 40px;
+      right: 20px;
+      color: $color-1;
+      top: 10px;
     }
   }
   @media screen and (max-width: 1200px) {

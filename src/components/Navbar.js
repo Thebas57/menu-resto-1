@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdRestaurant } from "react-icons/io";
 
 const Navbar = () => {
   const [displayMenu, setDisplayMenu] = useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
             <a href="#book">Book Table</a>
           </div>
           <div className="toggleBurger">
-            <GiHamburgerMenu onClick={(e) => handleMenu()} />
+            <GiHamburgerMenu onClick={() => handleMenu()} />
           </div>
         </>
       ) : (
@@ -66,7 +67,7 @@ const Navbar = () => {
               <a href="#landing">Landing</a>
             </li>
           </ul>
-          <GiHamburgerMenu onClick={(e) => handleMenu()} />
+          <IoMdRestaurant onClick={() => handleMenu()} />
         </div>
       )}
     </div>
