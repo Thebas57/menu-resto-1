@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 2rem 14rem;
+  padding-bottom: 100px;
   .info-home {
     grid-column: 1;
     display: flex;
@@ -40,7 +41,7 @@
       font-family: $font-2;
       cursor: pointer;
       min-width: 250px;
-      &:hover{
+      &:hover {
         background-color: black;
         border: 1px solid $color-1;
         color: $color-1;
@@ -53,12 +54,12 @@
     align-items: center;
     margin-top: 50px;
     margin-left: 10px;
-    img{
-        width: 85%;
-        margin: auto;
+    img {
+      width: 85%;
+      margin: auto;
     }
   }
-  .hashtag{
+  .hashtag {
     position: absolute;
     left: 20px;
     top: 50vh;
@@ -66,7 +67,7 @@
     font-family: $font-1;
     word-spacing: 2rem;
   }
-  .scroll{
+  .scroll {
     position: absolute;
     right: 50px;
     bottom: 0;
@@ -77,13 +78,13 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    .trait{
-        height: 50px;
-        width: 1px;
-        background-color: $color-1;
+    .trait {
+      height: 50px;
+      width: 1px;
+      background-color: $color-1;
     }
   }
-  .footer-home{
+  .footer-home {
     position: absolute;
     bottom: -20px;
     left: 100vh;
@@ -93,20 +94,23 @@
   @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr;
     margin: 0 5rem;
-    .info-home, .img-home{
-        grid-column: 1;
+    .info-home,
+    .img-home {
+      grid-column: 1;
     }
-    .scroll, .footer-home, .hashtag{
-        display: none;
+    .scroll,
+    .footer-home,
+    .hashtag {
+      display: none;
     }
   }
   @media screen and (max-width: 800px) {
     margin: 1rem;
-    .info-home{
-        button{
-            margin: auto;
-            width: 70%;
-        }
+    .info-home {
+      button {
+        margin: auto;
+        width: 70%;
+      }
     }
   }
 }
