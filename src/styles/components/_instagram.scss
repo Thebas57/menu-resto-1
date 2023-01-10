@@ -1,0 +1,80 @@
+.instagram-container {
+  padding: 2rem;
+  display: flex;
+  h4 {
+    font-weight: 400;
+    font-family: $font-2;
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: 0.04em;
+  }
+  h1 {
+    font-family: $font-2;
+    color: $color-1;
+    margin: 0;
+    font-size: 3rem;
+  }
+  h2 {
+    padding-top: 30px;
+    font-family: $font-2;
+    color: $color-1;
+    margin: 0;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  img {
+    height: 10px;
+    width: 40px;
+  }
+  p {
+    font-family: $font-1;
+    font-style: italic;
+    color: $color-2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+  }
+  button {
+    background-color: $color-1;
+    width: 141px;
+    height: 44px;
+    font-family: $font-2;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+      border: 1px solid $color-1;
+      color: $color-1;
+    }
+  }
+  .insta {
+    width: 40%;
+  }
+  .carousel {
+    width: 60%;
+    display: flex;
+    gap: 50px;
+    .img-carou {
+      height: 55vh;
+      width: 50%;
+      display: flex;
+      position: relative;
+      text-align: center;
+      align-items: center;
+      margin: auto;
+      justify-content: center;
+      img {
+        width: auto;
+        position: absolute;
+        height: 100%;
+      }
+      span {
+        margin: auto;
+        inset: 0;
+        z-index: 1;
+      }
+    }
+  }
+}

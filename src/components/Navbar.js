@@ -31,7 +31,7 @@ const Navbar = () => {
               <a href="#chef">Chef</a>
             </span>
             <span>
-              <a href="#landing">Landing</a>
+              <a href="#awards">Awards</a>
             </span>
           </div>
           <div className="register">
@@ -64,7 +64,7 @@ const Navbar = () => {
             </li>
             <li>
               {" "}
-              <a href="#landing">Landing</a>
+              <a href="#awards">Awards</a>
             </li>
           </ul>
           <IoMdRestaurant onClick={() => handleMenu()} />

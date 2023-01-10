@@ -1,0 +1,100 @@
+.awards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("../../../public/assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  h4 {
+    font-weight: 400;
+    font-family: $font-2;
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: 0.04em;
+  }
+  h1 {
+    font-family: $font-2;
+    color: $color-1;
+    margin: 0;
+    font-size: 3rem;
+  }
+  h2 {
+    padding-top: 30px;
+    font-family: $font-2;
+    color: $color-1;
+    margin: 0;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .spoon {
+    height: 10px;
+    width: 40px;
+  }
+  .img {
+    width: 30%;
+    padding: 5rem 0;
+    img {
+      width: 100%;
+    }
+  }
+  .awards {
+    width: 50%;
+  }
+  .laurels {
+    padding: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .detail-laurel {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      img {
+        height: 100%;
+        padding-right: 10px;
+      }
+      h3,
+      p {
+        margin: 0;
+      }
+      h3 {
+        font-family: $font-2;
+        color: $color-1;
+      }
+      p {
+        font-family: $font-1;
+        color: $color-2;
+        font-size: 0.8rem;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .awards{
+        margin-top: 2rem;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    .awards, .laurels, .img{
+        width: 100%;
+    }
+    .laurels{
+        padding: 2rem 0;
+    }
+    .awards{
+        width: 80%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .img{
+        padding: 0;
+        width: 80%;
+    }
+  }
+}
