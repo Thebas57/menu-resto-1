@@ -1,0 +1,96 @@
+.contact-container {
+  background-image: url("../../../public/assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 6rem;
+  display: flex;
+  h4 {
+    font-weight: 400;
+    font-family: $font-2;
+    font-size: 22px;
+    margin: 0;
+    letter-spacing: 0.04em;
+  }
+  h1 {
+    font-family: $font-2;
+    color: $color-1;
+    margin: 0;
+    font-size: 3rem;
+  }
+  h2 {
+    padding-top: 30px;
+    font-family: $font-2;
+    color: $color-1;
+    margin: 0;
+    font-size: 2rem;
+    font-style: italic;
+  }
+  .spoon {
+    height: 10px;
+    width: 40px;
+  }
+  p {
+    font-family: $font-1;
+    font-style: italic;
+    color: $color-2;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+  }
+  .hours {
+    font-family: $font-2;
+    color: $color-1;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 50px;
+  }
+  .detail-hours {
+    margin-top: 20px;
+  }
+  button {
+    background-color: $color-1;
+    width: 141px;
+    height: 44px;
+    font-family: $font-2;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 80px;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+      border: 1px solid $color-1;
+      color: $color-1;
+    }
+  }
+  .contact {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-img{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    img{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .contact{
+      width: 80%;
+    }
+}
+@media screen and (max-width: 800px) {
+    flex-direction: column;
+    .contact{
+      width: 100%;
+      margin: 2.3rem 1rem;
+    }
+    .contact-img{
+        width: 70%;
+    }
+}
+}
